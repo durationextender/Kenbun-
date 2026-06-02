@@ -1,0 +1,15 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "haki"
+version = "0.1.0"
+description = "Observe what's missing. Haki scans your FastAPI project and tells you which endpoints have no test written for them."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+
+[tool.maturin]
+features = ["pyo3"]
+bindings = "pyo3"
